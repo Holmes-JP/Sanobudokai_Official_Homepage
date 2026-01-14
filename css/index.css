@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+/* ===================================
+   ホームページ専用スタイル
+   明るい・モダン・和風テーマ
+   =================================== */
+
+/* ヒーローセクション */
+.hero {
+    position: relative;
+    width: min(1200px, 92vw);
+    height: 480px;
+    margin: 40px auto 70px;
+    overflow: hidden;
+    border-radius: 32px;
+    box-shadow: 0 12px 36px rgba(45, 52, 54, 0.12);
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: scaleIn 1s ease;
+    border-radius: 32px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.2) 100%);
+}
+
+.hero-title {
+    font-size: 2.6rem;
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--color-primary-dark);
+    text-shadow: none;
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    color: var(--color-text);
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+/* ウェルカムセクション */
+.welcome-section {
+    text-align: center;
+    padding: 55px 40px;
+    position: relative;
+}
+
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-gold));
+    border-radius: 2px;
+}
+
+.welcome-title {
+    font-size: 2.3rem;
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    animation: fadeInUp 0.6s ease;
+}
+
+.welcome-text {
+    font-size: 1.08rem;
+    color: var(--color-text-light);
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 2;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+/* スライダーセクション */
+.slider-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.slider-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.slide:hover img {
+    transform: scale(1.02);
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(44, 74, 110, 0.85));
+    color: #fff;
+    padding: 40px 25px 22px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-border);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.slider-dot:hover {
+    background-color: var(--color-primary-light);
+}
+
+.slider-dot.active {
+    background-color: var(--color-primary);
+    transform: scale(1.15);
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 18px;
+}
+
+.slider-arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(61, 90, 128, 0.25);
+}
+
+.slider-arrow:hover {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(61, 90, 128, 0.35);
+}
+
+/* YouTube動画セクション */
+.video-section {
+    padding: 45px;
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+}
+
+.video-container {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 自己紹介セクション */
+.intro-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.intro-content {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.intro-image {
+    flex-shrink: 0;
+    width: 320px;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.intro-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-title {
+    font-size: 1.85rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.intro-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+    border-radius: 1px;
+}
+
+.intro-subtitle {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-bottom: 22px;
+    letter-spacing: 0.05em;
+}
+
+.intro-description {
+    line-height: 2.1;
+    color: var(--color-text-light);
+    font-size: 1rem;
+}
+
+/* お問い合わせセクション */
+.contact-section {
+    padding: 45px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-bg-cream) 0%, var(--color-bg-warm) 100%);
+    border-radius: 18px;
+    margin: 25px;
+    position: relative;
+    border: 1px solid var(--color-border);
+    animation: fadeInUp 0.6s ease;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--color-gold);
+    border-radius: 2px;
+}
+
+.contact-title {
+    font-size: 1.65rem;
+    color: var(--color-text);
+    margin-bottom: 28px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.contact-phone {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 22px;
+    letter-spacing: 0.03em;
+}
+
+.contact-phone a {
+    color: inherit;
+    transition: color var(--transition-base);
+}
+
+.contact-phone a:hover {
+    color: var(--color-accent-dark);
+    text-decoration: underline;
+}
+
+/* 最近の投稿サイドバー */
+.home-layout {
+    display: flex;
+    gap: 35px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.home-main {
+    flex: 1;
+}
+
+.home-sidebar {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.sidebar-widget {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, var(--color-bg-light) 100%);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    animation: fadeInUp 0.6s ease;
+}
+
+.widget-title {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-primary);
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background: var(--color-gold);
+}
+
+.recent-post {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.recent-post:hover {
+    background: var(--color-bg-cream);
+    margin: 0 -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+
+.recent-post:last-child {
+    border-bottom: none;
+}
+
+.recent-post-image {
+    width: 85px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-base);
+}
+
+.recent-post:hover .recent-post-image {
+    transform: scale(1.03);
+}
+
+.recent-post-content {
+    flex: 1;
+}
+
+.recent-post-date {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+}
+
+.recent-post-title {
+    font-size: 0.94rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    font-weight: 500;
+    transition: color var(--transition-base);
+}
+
+.recent-post-title:hover {
+    color: var(--color-primary);
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .home-sidebar {
+        width: 100%;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-image {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 360px;
+        min-height: 320px;
+        width: 94vw;
+        margin: 28px auto 50px;
+        border-radius: 24px;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .welcome-title {
+        font-size: 1.7rem;
+    }
+
+    .welcome-text {
+        font-size: 1rem;
+    }
+
+    .slide img {
+        height: 300px;
+    }
+
+    .contact-phone {
+        font-size: 1.6rem;
+    }
+
+    .contact-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .welcome-section {
+        padding: 35px 20px;
+    }
+
+    .slider-section,
+    .video-section,
+    .intro-section {
+        padding: 28px 16px;
+    }
+
+    .slide img {
+        height: 240px;
+    }
+
+    .intro-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-section {
+        margin: 15px;
+        padding: 35px 20px;
+    }
+}

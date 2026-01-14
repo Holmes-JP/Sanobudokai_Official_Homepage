@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/* ===================================
+   佐野武道会の説明ページ専用スタイル
+   明るい・モダン・和風テーマ
+   =================================== */
+
+/* 道場訓セクション */
+.dojokun-section {
+    text-align: center;
+    padding: 55px 40px;
+    animation: fadeInUp 0.6s ease;
+    position: relative;
+}
+
+.dojokun-section::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+    border-radius: 1px;
+}
+
+.dojokun-image {
+    max-width: 620px;
+    margin: 0 auto;
+    border-radius: 14px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-base);
+}
+
+.dojokun-image:hover {
+    transform: scale(1.01);
+}
+
+/* 説明セクション */
+.explanation-section {
+    padding: 55px 45px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.explanation-item {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 70px;
+    animation: fadeInUp 0.5s ease both;
+}
+
+.explanation-item:nth-child(1) { animation-delay: 0.1s; }
+.explanation-item:nth-child(2) { animation-delay: 0.2s; }
+.explanation-item:nth-child(3) { animation-delay: 0.3s; }
+
+.explanation-item:last-child {
+    margin-bottom: 0;
+}
+
+.explanation-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.explanation-image {
+    flex: 0 0 45%;
+    max-width: 520px;
+}
+
+.explanation-image img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.explanation-image img:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.explanation-content {
+    flex: 1;
+}
+
+.explanation-title {
+    font-size: 1.85rem;
+    color: var(--color-primary);
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.explanation-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-gold));
+    border-radius: 2px;
+}
+
+.explanation-text {
+    line-height: 2.1;
+    color: var(--color-text-light);
+    font-size: 1rem;
+}
+
+.explanation-text p {
+    margin-bottom: 16px;
+}
+
+/* 特徴リスト */
+.feature-list {
+    margin-top: 25px;
+}
+
+.feature-list li {
+    padding: 14px 0;
+    padding-left: 28px;
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    transition: all var(--transition-base);
+}
+
+.feature-list li:hover {
+    background: var(--color-bg-cream);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 38px;
+    border-radius: 8px;
+}
+
+.feature-list li::before {
+    content: "◆";
+    position: absolute;
+    left: 5px;
+    color: var(--color-gold);
+    font-size: 0.7rem;
+    transition: transform var(--transition-base);
+}
+
+.feature-list li:hover::before {
+    transform: scale(1.2);
+    color: var(--color-accent);
+}
+
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+/* 歴史タイムライン */
+.history-timeline {
+    margin-top: 35px;
+    padding-left: 35px;
+    border-left: 3px solid var(--color-primary);
+    position: relative;
+}
+
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 3px;
+    height: 30px;
+    background: var(--color-gold);
+}
+
+.history-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 15px 20px;
+    background: var(--color-bg-cream);
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.history-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.history-item::before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--color-bg-light);
+    transition: all var(--transition-base);
+}
+
+.history-item:hover::before {
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+    transform: scale(1.15);
+}
+
+.history-year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+
+.history-description {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+    .explanation-item {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .explanation-item.reverse {
+        flex-direction: column;
+    }
+
+    .explanation-image {
+        flex: none;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .explanation-section {
+        padding: 35px 22px;
+    }
+
+    .explanation-title {
+        font-size: 1.45rem;
+    }
+
+    .dojokun-section {
+        padding: 35px 22px;
+    }
+
+    .history-timeline {
+        padding-left: 28px;
+    }
+
+    .history-item::before {
+        left: -35px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .explanation-section {
+        padding: 28px 16px;
+    }
+
+    .explanation-item {
+        margin-bottom: 50px;
+    }
+
+    .history-item {
+        padding: 12px 15px;
+    }
+}

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+/* ===================================
+   道場案内ページ専用スタイル
+   明るい・モダン・和風テーマ
+   =================================== */
+
+/* 料金表セクション */
+.fee-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.fee-table-container {
+    overflow-x: auto;
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 22px;
+    background: #fff;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.fee-table th {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.fee-table tr {
+    transition: all var(--transition-base);
+}
+
+.fee-table tr:hover {
+    background-color: var(--color-bg-cream);
+}
+
+.fee-table .fee-amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    letter-spacing: 0.02em;
+}
+
+.fee-note {
+    margin-top: 22px;
+    padding: 18px 22px;
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(218, 165, 32, 0.1) 100%);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    border-left: 4px solid var(--color-gold);
+}
+
+/* 稽古スケジュール */
+.schedule-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease 0.1s both;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 35px;
+}
+
+.schedule-subtitle {
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    margin-top: 35px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.schedule-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background: var(--color-gold);
+}
+
+.schedule-card {
+    background: linear-gradient(135deg, #fff 0%, var(--color-bg-light) 100%);
+    border-radius: 14px;
+    padding: 28px;
+    text-align: center;
+    border-left: 4px solid var(--color-primary);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-gold) 100%);
+}
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.schedule-day {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    letter-spacing: 0.03em;
+}
+
+.schedule-location {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    margin-top: 12px;
+}
+
+.schedule-time {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.schedule-content {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* 持ち物セクション */
+.equipment-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.equipment-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.equipment-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    background: linear-gradient(135deg, #fff 0%, var(--color-bg-light) 100%);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.equipment-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--color-primary-light);
+}
+
+.equipment-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* 道場情報セクション */
+.dojo-locations {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease 0.3s both;
+}
+
+.location-card {
+    background: linear-gradient(135deg, #fff 0%, var(--color-bg-light) 100%);
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.location-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.location-card:last-child {
+    margin-bottom: 0;
+}
+
+.location-header {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    padding: 22px 32px;
+    position: relative;
+}
+
+.location-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width: 50px;
+    height: 3px;
+    background: var(--color-gold);
+    border-radius: 2px;
+}
+
+.location-name {
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.location-body {
+    padding: 32px;
+}
+
+.location-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 22px;
+    margin-bottom: 28px;
+}
+
+.location-info-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.location-info-label {
+    font-weight: 700;
+    color: var(--color-text);
+    min-width: 85px;
+    letter-spacing: 0.02em;
+}
+
+.location-info-value {
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.location-map {
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 注意事項 */
+.notice-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease 0.4s both;
+}
+
+.notice-list {
+    margin-top: 24px;
+}
+
+.notice-list li {
+    padding: 14px 0;
+    padding-left: 32px;
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    transition: all var(--transition-base);
+}
+
+.notice-list li:hover {
+    background: var(--color-bg-cream);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 42px;
+    border-radius: 8px;
+}
+
+.notice-list li::before {
+    content: "※";
+    position: absolute;
+    left: 5px;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.notice-list li:last-child {
+    border-bottom: none;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .fee-table th,
+    .fee-table td {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .fee-section,
+    .schedule-section,
+    .equipment-section,
+    .dojo-locations,
+    .notice-section {
+        padding: 28px 18px;
+    }
+
+    .location-header {
+        padding: 18px 22px;
+    }
+
+    .location-body {
+        padding: 22px;
+    }
+
+    .location-map {
+        height: 260px;
+    }
+
+    .schedule-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .fee-section,
+    .schedule-section,
+    .equipment-section,
+    .dojo-locations,
+    .notice-section {
+        padding: 22px 14px;
+    }
+
+    .location-name {
+        font-size: 1.25rem;
+    }
+
+    .schedule-card {
+        padding: 22px 18px;
+    }
+}

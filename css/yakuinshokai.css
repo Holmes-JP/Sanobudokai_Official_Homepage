@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+/* ===================================
+   役員紹介ページ専用スタイル
+   明るい・モダン・和風テーマ
+   =================================== */
+
+/* 役員一覧グリッド */
+.officer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.officer-card {
+    background: linear-gradient(135deg, #fff 0%, var(--color-bg-light) 100%);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+    animation: fadeInUp 0.5s ease both;
+}
+
+.officer-card:nth-child(1) { animation-delay: 0.1s; }
+.officer-card:nth-child(2) { animation-delay: 0.15s; }
+.officer-card:nth-child(3) { animation-delay: 0.2s; }
+.officer-card:nth-child(4) { animation-delay: 0.25s; }
+
+.officer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.officer-card-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform var(--transition-slow);
+}
+
+.officer-card:hover .officer-card-image {
+    transform: scale(1.03);
+}
+
+.officer-card-content {
+    padding: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.officer-card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+    border-radius: 2px;
+}
+
+.officer-card-position {
+    display: inline-block;
+    padding: 6px 18px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 25px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.officer-card-name {
+    font-size: 1.45rem;
+    color: var(--color-text);
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.officer-card-name-reading {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+    letter-spacing: 0.08em;
+}
+
+.officer-card-description {
+    color: var(--color-text-light);
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+.officer-card-link {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, var(--color-bg-cream) 0%, var(--color-bg-warm) 100%);
+    border-radius: 10px;
+    color: var(--color-text);
+    font-weight: 600;
+    transition: all var(--transition-base);
+    border: 1px solid var(--color-border);
+}
+
+.officer-card-link:hover {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+/* 役員詳細ページ */
+.officer-detail {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.officer-profile {
+    display: flex;
+    gap: 55px;
+    align-items: flex-start;
+}
+
+.officer-profile-image {
+    flex-shrink: 0;
+    width: 370px;
+}
+
+.officer-profile-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-base);
+}
+
+.officer-profile-image img:hover {
+    transform: scale(1.02);
+}
+
+.officer-profile-content {
+    flex: 1;
+}
+
+.officer-position {
+    display: inline-block;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    font-size: 0.92rem;
+    border-radius: 28px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 12px rgba(61, 90, 128, 0.25);
+}
+
+.officer-name {
+    font-size: 2.3rem;
+    color: var(--color-text);
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.officer-name-reading {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+}
+
+.officer-title {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid var(--color-border);
+    position: relative;
+}
+
+.officer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+}
+
+.officer-bio {
+    line-height: 2.1;
+    color: var(--color-text-light);
+}
+
+.officer-bio p {
+    margin-bottom: 22px;
+}
+
+/* 経歴・資格 */
+.officer-credentials {
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 2px solid var(--color-border);
+    position: relative;
+}
+
+.officer-credentials::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--color-gold);
+}
+
+.credentials-title {
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.credentials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.credentials-list li {
+    padding: 14px 18px;
+    padding-left: 35px;
+    background: linear-gradient(135deg, #fff 0%, var(--color-bg-light) 100%);
+    border-radius: 10px;
+    position: relative;
+    color: var(--color-text-light);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.credentials-list li:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--color-primary-light);
+}
+
+.credentials-list li::before {
+    content: "◆";
+    position: absolute;
+    left: 14px;
+    color: var(--color-gold);
+    font-size: 0.7rem;
+}
+
+/* 複数役員表示 */
+.officers-section {
+    padding: 45px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.officers-row {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 55px;
+}
+
+.officers-row:last-child {
+    margin-bottom: 0;
+}
+
+.officer-item {
+    flex: 1;
+    display: flex;
+    gap: 32px;
+    background: linear-gradient(135deg, #fff 0%, var(--color-bg-light) 100%);
+    border-radius: 18px;
+    padding: 32px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.officer-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.officer-item-image {
+    flex-shrink: 0;
+    width: 190px;
+}
+
+.officer-item-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-base);
+}
+
+.officer-item:hover .officer-item-image img {
+    transform: scale(1.02);
+}
+
+.officer-item-content {
+    flex: 1;
+}
+
+.officer-item-position {
+    font-size: 0.88rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+}
+
+.officer-item-name {
+    font-size: 1.45rem;
+    color: var(--color-text);
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.officer-item-title {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.officer-item-bio {
+    color: var(--color-text-light);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* ナビゲーションリンク */
+.officer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 2px solid var(--color-border);
+}
+
+.officer-nav-link {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, var(--color-bg-cream) 0%, var(--color-bg-warm) 100%);
+    border-radius: 10px;
+    color: var(--color-text);
+    transition: all var(--transition-base);
+    font-weight: 600;
+    border: 1px solid var(--color-border);
+}
+
+.officer-nav-link:hover {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+/* セクションサブタイトル */
+.section-subtitle {
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    margin-top: 35px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    position: relative;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--color-gold);
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+    .officer-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .officer-profile-image {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .officers-row {
+        flex-direction: column;
+    }
+
+    .officer-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .officer-item-image {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .officer-detail,
+    .officers-section {
+        padding: 28px 18px;
+    }
+
+    .officer-name {
+        font-size: 1.85rem;
+    }
+
+    .officer-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .officer-card-image {
+        height: 270px;
+    }
+
+    .officer-profile-content {
+        text-align: center;
+    }
+
+    .officer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .officer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .officer-card-content {
+        padding: 22px 18px;
+    }
+
+    .officer-item {
+        padding: 22px 18px;
+    }
+}
