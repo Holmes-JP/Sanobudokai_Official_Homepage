@@ -14,3 +14,6 @@ Open `http://localhost:8081`.
 
 If you serve the site under a subdirectory, set `APP_BASE_PATH` in
 `docker-compose.yml` (example: `/Sanobudokai_Official_Homepage`).
+
+
+Communicate in Japanese
