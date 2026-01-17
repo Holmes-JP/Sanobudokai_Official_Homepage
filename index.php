@@ -6,140 +6,166 @@ require_once __DIR__ . '/config.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="こちらは神影流山本派-佐野武道会の公式ホームページです。佐野武道会は栃木県佐野市に拠点を置く神影流道場で、主に剣道・神心無想流居合道をご指導しています。見学・体験は随時歓迎しています。">
-    <meta name="keywords" content="佐野武道会,神影流,山本派,居合道,剣道,武道,栃木県,佐野市,神心無想流,試斬">
-    <title>神影流山本派-佐野武道会 | 公式ホームページ</title>
-    <link rel="stylesheet" href="<?= $basePath ?>/css/common.css">
-    <link rel="stylesheet" href="<?= $basePath ?>/css/index.css">
+    <meta name="description" content="佐野武道会は栃木県佐野市に拠点を置く居合道の道場です。神心無想流居合道と剣道の稽古を通じて、技術と精神を磨きます。初心者歓迎。">
+    <meta name="keywords" content="佐野武道会,居合道,剣道,武道,栃木県,佐野市,神心無想流,試斬">
+    <title>佐野武道会 | 栃木県佐野市の居合道道場</title>
+    <link rel="stylesheet" href="<?= $basePath ?>/css/style.css">
 </head>
 <body>
     <?php include __DIR__ . '/partials/site-header.php'; ?>
 
     <!-- ヒーローセクション -->
     <section class="hero">
-        <img src="<?= $basePath ?>/img/index/hero.jpg" alt="神影流山本派-佐野武道会" class="hero-image">
+        <div class="hero-decoration left"></div>
+        <div class="hero-decoration right"></div>
+        
+        <div class="hero-content">
+            <p class="hero-subtitle animate-on-scroll">Sano Budokai - Iaido Dojo</p>
+            <h1 class="hero-title">
+                <span class="main-title animate-on-scroll delay-1">佐野武道会</span>
+                <span class="sub-title animate-on-scroll delay-2">栃木県佐野市の居合道道場</span>
+            </h1>
+            <p class="hero-description animate-on-scroll delay-3">
+                静寂の中に宿る気迫。一閃の刃に込められた精神。<br>
+                私たちは伝統の技と心を次世代へ繋ぎます。
+            </p>
+            <div class="hero-cta animate-on-scroll delay-4">
+                <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="btn btn-primary">
+                    佐野武道会を知る
+                </a>
+                <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-outline">
+                    お問い合わせ
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- メインコンテンツ -->
-    <main>
-        <div class="home-layout">
-            <div class="home-main">
-                <!-- ウェルカムセクション -->
-                <section class="content-section welcome-section">
-                    <h2 class="welcome-title">ようこそ神影流山本派-佐野武道会へ</h2>
-                    <p class="welcome-text">
-                        佐野武道会は平成6年に設立された栃木県佐野市の神影流道場です。<br>
-                        神心無想流居合道と剣道の稽古を通じて、技術向上だけでなく礼節と精神を大切にしています。<br>
-                        2ヶ月に一度は真剣での試斬も実施しています。<br>
-                        初心者から経験者まで、武道に興味のある方はぜひお気軽にお問い合わせください。
-                    </p>
-                </section>
-
-                <!-- 画像スライダー -->
-                <section class="content-section slider-section">
-                    <h2 class="section-title">道場の様子</h2>
-                    <div class="slider-container">
-                        <div class="slider" id="slider">
-                            <div class="slide">
-                                <img src="<?= $basePath ?>/img/index/dojo1.jpg" alt="道場の様子 稽古風景">
-                                <div class="slide-caption">稽古風景</div>
-                            </div>
-                            <div class="slide">
-                                <img src="<?= $basePath ?>/img/index/dojo2.jpg" alt="居合道 演武">
-                                <div class="slide-caption">居合道演武</div>
-                            </div>
-                            <div class="slide">
-                                <img src="<?= $basePath ?>/img/index/dojo3.jpg" alt="試斬の様子">
-                                <div class="slide-caption">試斬の様子</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-nav" id="sliderNav">
-                        <div class="slider-dot active" data-index="0"></div>
-                        <div class="slider-dot" data-index="1"></div>
-                        <div class="slider-dot" data-index="2"></div>
-                    </div>
-                    <div class="slider-arrows">
-                        <button class="slider-arrow" onclick="prevSlide()">&#10094;</button>
-                        <button class="slider-arrow" onclick="nextSlide()">&#10095;</button>
-                    </div>
-                </section>
-
-                <!-- YouTube動画 -->
-                <section class="content-section video-section">
-                    <h2 class="section-title">動画紹介</h2>
-                    <div class="video-container">
-                        <iframe
-                            src="https://www.youtube.com/embed/WFWO-HVRyzI"
-                            title="神影流山本派-佐野武道会 紹介動画"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </section>
-
-                <!-- 会長紹介 -->
-                <section class="content-section intro-section">
-                    <h2 class="section-title">会長紹介</h2>
-                    <div class="intro-content">
-                        <div class="intro-image">
-                            <img src="<?= $basePath ?>/img/yakuinshokai/kaicho/kaicho.jpg" alt="山本吉男会長">
-                        </div>
-                        <div class="intro-text">
-                            <h3 class="intro-title">山本 吉男</h3>
-                            <p class="intro-subtitle">号・影舟（かげふね）<br>神影流山本派初代宗家・佐野武道会会長</p>
-                            <p class="intro-description">
-                                昭和19年栃木県佐野市生まれ。昭和60年に入門し、平成6年に佐野武道会を設立。<br><br>
-                                神心無想流居合道と剣道の指導を行い、技術の向上だけでなく礼儀作法や精神面の鍛錬にも力を入れています。<br><br>
-                                オーストラリア（ブリスベン）・イギリス（ケンブリッジ）にも支部を設立し、日本の伝統武道を世界に広める活動を続けています。
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- お問い合わせセクション -->
-                <section class="contact-section">
-                    <h2 class="contact-title">見学・入会・お問い合わせ</h2>
-                    <p class="contact-phone">
-                        <a href="tel:090-2457-9592">090-2457-9592</a>
-                    </p>
-                    <p class="mb-20">お気軽にお電話ください</p>
-                    <a href="<?= $basePath ?>/pages/access/access.php" class="btn btn-primary">メールでのお問い合わせ</a>
-                </section>
+    <!-- 特徴セクション -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center animate-on-scroll">
+                <h2 class="heading-lg section-title">佐野武道会の特色</h2>
+                <p class="body-lg" style="color: var(--color-text-secondary); max-width: 700px; margin: var(--space-md) auto;">
+                    平成6年設立以来、伝統と革新を融合させた稽古を通じて<br class="hide-mobile">
+                    多くの門下生と共に武道の道を歩んでまいりました。
+                </p>
             </div>
-
-            <!-- サイドバー -->
-            <aside class="home-sidebar">
-                <div class="sidebar-widget">
-                    <h3 class="widget-title">最近の投稿</h3>
-                    <article class="recent-post">
-                        <img src="<?= $basePath ?>/img/katsudokiroku/post1.jpg" alt="最近の投稿1" class="recent-post-image">
-                        <div class="recent-post-content">
-                            <p class="recent-post-date">2024/01/15</p>
-                            <a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php" class="recent-post-title">新年稽古会を開催しました</a>
-                        </div>
-                    </article>
-                    <article class="recent-post">
-                        <img src="<?= $basePath ?>/img/katsudokiroku/post2.jpg" alt="最近の投稿2" class="recent-post-image">
-                        <div class="recent-post-content">
-                            <p class="recent-post-date">2023/12/20</p>
-                            <a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php" class="recent-post-title">年末演武会を実施</a>
-                        </div>
-                    </article>
-                    <article class="recent-post">
-                        <img src="<?= $basePath ?>/img/katsudokiroku/post3.jpg" alt="最近の投稿3" class="recent-post-image">
-                        <div class="recent-post-content">
-                            <p class="recent-post-date">2023/11/10</p>
-                            <a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php" class="recent-post-title">体験会のご報告</a>
-                        </div>
-                    </article>
+            
+            <div class="features" style="margin-top: var(--space-lg);">
+                <div class="glass-card feature-item animate-on-scroll delay-1">
+                    <div class="feature-icon">刀</div>
+                    <h3 class="feature-title">神心無想流居合道</h3>
+                    <p class="feature-description">
+                        古来より伝わる神心無想流の技法を、正統な形で学ぶことができます。
+                    </p>
                 </div>
-            </aside>
+                
+                <div class="glass-card feature-item animate-on-scroll delay-2">
+                    <div class="feature-icon">斬</div>
+                    <h3 class="feature-title">真剣試斬</h3>
+                    <p class="feature-description">
+                        2ヶ月に一度、真剣を用いた試斬稽古を実施。実践的な技術を磨きます。
+                    </p>
+                </div>
+                
+                <div class="glass-card feature-item animate-on-scroll delay-3">
+                    <div class="feature-icon">心</div>
+                    <h3 class="feature-title">心身の鍛錬</h3>
+                    <p class="feature-description">
+                        技術だけでなく、礼節と精神を重んじた指導で人格形成にも貢献します。
+                    </p>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- 佐野武道会について -->
+    <section class="section" style="background: rgba(0,0,0,0.2);">
+        <div class="container">
+            <div class="content-block">
+                <div class="content-text animate-on-scroll">
+                    <span class="label">About Us</span>
+                    <h3>佐野武道会とは</h3>
+                    <p>
+                        佐野武道会は平成6年（1994年）に設立された、栃木県佐野市を拠点とする居合道の道場です。
+                        神心無想流居合道と剣道の稽古を通じて、技術向上だけでなく、礼節と精神を大切にした指導を行っています。
+                    </p>
+                    <p style="margin-top: var(--space-sm);">
+                        初心者から経験者まで、武道に興味のある方はぜひお気軽にお問い合わせください。
+                        見学・体験は随時歓迎しております。
+                    </p>
+                    <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="btn btn-ghost" style="margin-top: var(--space-md);">
+                        詳しく見る →
+                    </a>
+                </div>
+                <div class="content-image animate-on-scroll delay-2">
+                    <span>画像準備中</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 稽古案内 -->
+    <section class="section">
+        <div class="container">
+            <div class="content-block reverse">
+                <div class="content-text animate-on-scroll">
+                    <span class="label">Training</span>
+                    <h3>稽古案内</h3>
+                    <p>
+                        稽古は栃木県佐野市内の道場にて定期的に開催しております。
+                        基礎から応用まで、個々のレベルに合わせた丁寧な指導を心がけています。
+                    </p>
+                    
+                    <div style="margin-top: var(--space-md);">
+                        <div class="info-box">
+                            <div class="info-box-icon">📅</div>
+                            <div class="info-box-content">
+                                <h4>稽古日</h4>
+                                <p>詳細は道場案内ページをご確認ください</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-box-icon">📍</div>
+                            <div class="info-box-content">
+                                <h4>場所</h4>
+                                <p>栃木県佐野市内</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="btn btn-ghost" style="margin-top: var(--space-md);">
+                        道場案内を見る →
+                    </a>
+                </div>
+                <div class="content-image animate-on-scroll delay-2">
+                    <span>画像準備中</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせCTA -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(212, 168, 75, 0.05) 100%);">
+        <div class="container text-center">
+            <div class="animate-on-scroll">
+                <h2 class="heading-md" style="margin-bottom: var(--space-sm);">見学・体験のご案内</h2>
+                <p class="body-lg" style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-md);">
+                    武道に興味をお持ちの方、居合道を始めてみたい方、<br class="hide-mobile">
+                    まずはお気軽にお問い合わせください。
+                </p>
+                <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-primary">
+                    お問い合わせはこちら
+                </a>
+            </div>
+        </div>
+    </section>
 
     <?php include __DIR__ . '/partials/site-footer.php'; ?>
+
+    <button class="scroll-top" id="scroll-top" aria-label="ページトップへ戻る">
+        ↑
+    </button>
 
     <script src="<?= $basePath ?>/js/main.js"></script>
 </body>

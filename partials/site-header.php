@@ -3,47 +3,42 @@ if (!isset($basePath)) {
     $basePath = '';
 }
 ?>
-<header class="site-header">
-    <div class="header-inner">
-        <a href="<?= $basePath ?>/index.php" class="logo">
-            <img src="<?= $basePath ?>/img/common/logo.png" alt="佐野武道会ロゴ">
-            <span class="logo-text">佐野武道会</span>
+<header class="navbar" id="navbar">
+    <div class="navbar-container">
+        <a href="<?= $basePath ?>/index.php" class="navbar-brand">
+            <img src="<?= $basePath ?>/img/common/logo.png" alt="神影流山本派・佐野武道会" class="navbar-logo">
         </a>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="main-nav" id="mainNav">
-            <div class="nav-item">
-                <a href="<?= $basePath ?>/index.php" class="nav-link">HOME</a>
-            </div>
-            <div class="nav-item">
-                <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="nav-link">佐野武道会の説明</a>
-                <div class="dropdown">
-                    <a href="<?= $basePath ?>/pages/setsumei/setsumei.php#budokai" class="dropdown-link">佐野武道会とは</a>
-                    <a href="<?= $basePath ?>/pages/setsumei/setsumei.php#iaido" class="dropdown-link">神心無想流居合</a>
-                    <a href="<?= $basePath ?>/pages/setsumei/setsumei.php#tameshigiri" class="dropdown-link">試斬</a>
-                </div>
-            </div>
-            <div class="nav-item">
-                <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="nav-link">道場案内</a>
-            </div>
-            <div class="nav-item">
-                <a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php" class="nav-link">活動記録</a>
-            </div>
-            <div class="nav-item">
-                <a href="<?= $basePath ?>/pages/yakuinshokai/yakuinshokai.php" class="nav-link">役員紹介</a>
-                <div class="dropdown">
-                    <a href="<?= $basePath ?>/pages/yakuinshokai/kaicho/kaicho.php" class="dropdown-link">会長</a>
-                    <a href="<?= $basePath ?>/pages/yakuinshokai/fukukaicho/fukukaicho.php" class="dropdown-link">副会長</a>
-                    <a href="<?= $basePath ?>/pages/yakuinshokai/sodanyaku/sodanyaku.php" class="dropdown-link">相談役</a>
-                    <a href="<?= $basePath ?>/pages/yakuinshokai/shidosha/shidosha.php" class="dropdown-link">指導者</a>
-                </div>
-            </div>
-            <div class="nav-item">
-                <a href="<?= $basePath ?>/pages/access/access.php" class="nav-link">お問い合わせ</a>
-            </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="navbar-nav">
+            <a href="<?= $basePath ?>/index.php" class="nav-link">ホーム</a>
+            <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="nav-link">佐野武道会の説明</a>
+            <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="nav-link">道場案内</a>
+            <a href="<?= $basePath ?>/pages/yakuinshokai/yakuinshokai.php" class="nav-link">役員紹介</a>
+            <a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php" class="nav-link">活動記録</a>
+            <a href="<?= $basePath ?>/pages/contact/contact.php" class="nav-link">お問い合わせ</a>
         </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-nav">
+        <a href="<?= $basePath ?>/index.php" class="mobile-nav-link">ホーム</a>
+        <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="mobile-nav-link">佐野武道会の説明</a>
+        <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="mobile-nav-link">道場案内</a>
+        <a href="<?= $basePath ?>/pages/yakuinshokai/yakuinshokai.php" class="mobile-nav-link">役員紹介</a>
+        <a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php" class="mobile-nav-link">活動記録</a>
+        <a href="<?= $basePath ?>/pages/contact/contact.php" class="mobile-nav-link">お問い合わせ</a>
+    </div>
+</nav>
