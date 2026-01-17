@@ -10,6 +10,8 @@ require_once __DIR__ . '/config.php';
     <meta name="keywords" content="佐野武道会,居合道,剣道,武道,栃木県,佐野市,神心無想流,試斬">
     <title>佐野武道会 | 栃木県佐野市の居合道道場</title>
     <link rel="stylesheet" href="<?= $basePath ?>/css/style.css">
+    <link rel="stylesheet" href="<?= $basePath ?>/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <?php include __DIR__ . '/partials/site-header.php'; ?>
@@ -20,13 +22,13 @@ require_once __DIR__ . '/config.php';
         <div class="hero-decoration right"></div>
         
         <div class="hero-content">
-            <p class="hero-subtitle animate-on-scroll">Sano Budokai - Iaido Dojo</p>
+            <p class="hero-subtitle animate-on-scroll">Sano Budokai</p>
             <h1 class="hero-title">
                 <span class="main-title animate-on-scroll delay-1">佐野武道会</span>
-                <span class="sub-title animate-on-scroll delay-2">栃木県佐野市の居合道道場</span>
+                <span class="sub-title animate-on-scroll delay-2">神影流山本派</span>
             </h1>
             <p class="hero-description animate-on-scroll delay-3">
-                静寂の中に宿る気迫。一閃の刃に込められた精神。<br>
+                心技一妙。一閃の刃に込められた精神。<br>
                 私たちは伝統の技と心を次世代へ繋ぎます。
             </p>
             <div class="hero-cta animate-on-scroll delay-4">
@@ -46,34 +48,28 @@ require_once __DIR__ . '/config.php';
             <div class="text-center animate-on-scroll">
                 <h2 class="heading-lg section-title">佐野武道会の特色</h2>
                 <p class="body-lg" style="color: var(--color-text-secondary); max-width: 700px; margin: var(--space-md) auto;">
-                    平成6年設立以来、伝統と革新を融合させた稽古を通じて<br class="hide-mobile">
+                    平成6年設立以来、伝統を重んじた稽古を通じて<br class="hide-mobile">
                     多くの門下生と共に武道の道を歩んでまいりました。
                 </p>
             </div>
-            
-            <div class="features" style="margin-top: var(--space-lg);">
-                <div class="glass-card feature-item animate-on-scroll delay-1">
-                    <div class="feature-icon">刀</div>
-                    <h3 class="feature-title">神心無想流居合道</h3>
-                    <p class="feature-description">
-                        古来より伝わる神心無想流の技法を、正統な形で学ぶことができます。
-                    </p>
-                </div>
-                
-                <div class="glass-card feature-item animate-on-scroll delay-2">
-                    <div class="feature-icon">斬</div>
-                    <h3 class="feature-title">真剣試斬</h3>
-                    <p class="feature-description">
-                        2ヶ月に一度、真剣を用いた試斬稽古を実施。実践的な技術を磨きます。
-                    </p>
-                </div>
-                
-                <div class="glass-card feature-item animate-on-scroll delay-3">
-                    <div class="feature-icon">心</div>
-                    <h3 class="feature-title">心身の鍛錬</h3>
-                    <p class="feature-description">
-                        技術だけでなく、礼節と精神を重んじた指導で人格形成にも貢献します。
-                    </p>
+
+            <!-- 画像カルーセル (Swiper) -->
+            <div class="carousel-section" style="margin-top: var(--space-lg);">
+                <div class="swiper carousel-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?= $basePath ?>/img/index/sride/1.jpg" alt="稽古風景1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $basePath ?>/img/index/sride/2.jpg" alt="稽古風景2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $basePath ?>/img/index/sride/3.jpg" alt="稽古風景3">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -87,7 +83,7 @@ require_once __DIR__ . '/config.php';
                     <span class="label">About Us</span>
                     <h3>佐野武道会とは</h3>
                     <p>
-                        佐野武道会は平成6年（1994年）に設立された、栃木県佐野市を拠点とする居合道の道場です。
+                        佐野武道会は平成6年（1994年）に設立された、栃木県佐野市を拠点とする居合道・剣道の道場です。
                         神心無想流居合道と剣道の稽古を通じて、技術向上だけでなく、礼節と精神を大切にした指導を行っています。
                     </p>
                     <p style="margin-top: var(--space-sm);">
@@ -99,7 +95,7 @@ require_once __DIR__ . '/config.php';
                     </a>
                 </div>
                 <div class="content-image animate-on-scroll delay-2">
-                    <span>画像準備中</span>
+                    <img src="<?= $basePath ?>/img/index/Logo.png" alt="佐野武道会ロゴ">
                 </div>
             </div>
         </div>
@@ -139,7 +135,7 @@ require_once __DIR__ . '/config.php';
                     </a>
                 </div>
                 <div class="content-image animate-on-scroll delay-2">
-                    <span>画像準備中</span>
+                    <img src="<?= $basePath ?>/img/index/Logo.png" alt="佐野武道会ロゴ">
                 </div>
             </div>
         </div>
@@ -168,5 +164,26 @@ require_once __DIR__ . '/config.php';
     </button>
 
     <script src="<?= $basePath ?>/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.carousel-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            effect: 'slide',
+            speed: 600,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            grabCursor: true,
+        });
+    </script>
 </body>
 </html>

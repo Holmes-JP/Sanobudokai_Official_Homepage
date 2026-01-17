@@ -22,6 +22,13 @@ require_once __DIR__ . '/../../config.php';
 
     <!-- メインコンテンツ -->
     <main>
+        <!-- 道場訓 -->
+        <section class="section">
+            <div class="container">
+                <img src="<?= $basePath ?>/img/setsumei/JP-Dojokun.jpg" alt="道場訓" style="max-width: 500px; width: 100%; height: auto; display: block; margin: 0 auto;">
+            </div>
+        </section>
+
         <!-- 佐野武道会とは -->
         <section id="budokai" class="section">
             <div class="container">
@@ -55,7 +62,7 @@ require_once __DIR__ . '/../../config.php';
                         </div>
                     </div>
                     <div class="content-image animate-on-scroll delay-2">
-                        <span>画像準備中</span>
+                        <img src="<?= $basePath ?>/img/index/Logo.png" alt="佐野武道会ロゴ">
                     </div>
                 </div>
             </div>
@@ -69,28 +76,26 @@ require_once __DIR__ . '/../../config.php';
                         <span class="label">Iaido</span>
                         <h2 class="heading-md">神心無想流居合とは</h2>
                         <p>
-                            <strong style="color: var(--color-accent);">神心無想流</strong>は、神影流二十四世・中島将弼（号・勝雲）が編み出した居合の流派です。
-                            神影流剣術をはじめ、合気道・薙刀術・杖術・弓術・空手などを修業し、1942年に実践的居合として体系化されました。
+                            <strong style="color: var(--color-accent);">神心無想流</strong>とは、神影流二十四世-中島将弼 号-勝雲が編み出した居合の流派。
                         </p>
                         <p style="margin-top: var(--space-sm);">
-                            当道場では初心者から真剣を用いた稽古を行い、実戦的な技術と精神の鍛錬を重視しています。
+                            中島将弼は家伝の神影流剣術のほか、合気道や薙刀術、杖術、弓術、空手など様々な武術を修業し、1942年（昭和17年）神影流剣術より神心無想流居合を編み出した。
                         </p>
-                        
-                        <div class="glass-card" style="margin-top: var(--space-md); padding: var(--space-md);">
-                            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
-                                <div>
-                                    <p style="color: var(--color-accent); font-weight: 600;">平成6年</p>
-                                    <p style="color: var(--color-text-secondary);">佐野武道会設立</p>
-                                </div>
-                                <div>
-                                    <p style="color: var(--color-accent); font-weight: 600;">現在</p>
-                                    <p style="color: var(--color-text-secondary);">国内外で普及活動を展開</p>
-                                </div>
-                            </div>
-                        </div>
+                        <p style="margin-top: var(--space-sm);">
+                            神心無想流居合とは、一般的な居合の型より一歩進んだ実践的居合であり精神力の動きを表すものとしてご理解いただきたいと存じます。
+                        </p>
+                        <p style="margin-top: var(--space-sm);">
+                            また我らの師、神影流二十五世宗家-豊島一虎 号-勝峰の教え通り、当道場では稽古に初心者より真剣を用いる結果、進歩は著しい速さを示します。
+                        </p>
+                        <p style="margin-top: var(--space-md);">
+                            埼玉県越谷市で活動している神影流本部道場のURLはこちらになります。<br>
+                            <a href="https://shinkageryu.jp/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="margin-top: var(--space-sm);">
+                                神影流本部道場 →
+                            </a>
+                        </p>
                     </div>
                     <div class="content-image animate-on-scroll delay-2">
-                        <span>画像準備中</span>
+                        <img src="<?= $basePath ?>/img/setsumei/iaido.jpg" alt="豊島一虎 号-勝峰 神影流二十五世宗家">
                     </div>
                 </div>
             </div>
@@ -102,32 +107,17 @@ require_once __DIR__ . '/../../config.php';
                 <div class="content-block">
                     <div class="content-text animate-on-scroll">
                         <span class="label">Tameshigiri</span>
-                        <h2 class="heading-md">試斬（しざん）</h2>
+                        <h2 class="heading-md">試斬</h2>
                         <p>
-                            当道場では2ヶ月に一度ほど、真剣での青竹の試斬りを行います。
+                            当道場では数カ月に一度ほど、真剣での青竹の試斬りを行います。
                             日々の鍛錬の成果や正しい刀法を確認するためであり、剣道の門下生も参加できます。
                         </p>
                         <p style="margin-top: var(--space-sm);">
                             竹刀では得にくい刃筋や物打の感覚を学び、安全管理のもとで実施します。
                         </p>
-                        
-                        <div class="features" style="margin-top: var(--space-md); grid-template-columns: repeat(2, 1fr); gap: var(--space-sm);">
-                            <div class="glass-card" style="padding: var(--space-sm); text-align: center;">
-                                <p style="font-weight: 600;">真剣使用</p>
-                            </div>
-                            <div class="glass-card" style="padding: var(--space-sm); text-align: center;">
-                                <p style="font-weight: 600;">刃筋確認</p>
-                            </div>
-                            <div class="glass-card" style="padding: var(--space-sm); text-align: center;">
-                                <p style="font-weight: 600;">安全管理</p>
-                            </div>
-                            <div class="glass-card" style="padding: var(--space-sm); text-align: center;">
-                                <p style="font-weight: 600;">定期開催</p>
-                            </div>
-                        </div>
                     </div>
                     <div class="content-image animate-on-scroll delay-2">
-                        <span>画像準備中</span>
+                        <img src="<?= $basePath ?>/img/setsumei/setsumei_3.JPG" alt="試斬の様子">
                     </div>
                 </div>
             </div>
