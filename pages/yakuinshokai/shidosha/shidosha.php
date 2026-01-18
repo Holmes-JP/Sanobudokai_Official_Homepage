@@ -16,85 +16,57 @@ require_once __DIR__ . '/../../../config.php';
 <body>
     <?php include __DIR__ . '/../../../partials/site-header.php'; ?>
 
-    <!-- ヒーローセクション -->
-    <section class="page-hero">
-        <div class="page-hero-overlay"></div>
-        <div class="page-hero-content">
-            <h1 class="page-hero-title" data-text="指導者">指導者</h1>
-            <p class="page-hero-subtitle">Instructors</p>
-        </div>
-    </section>
+    <!-- ページヘッダー -->
+    <header class="page-header">
+        <p class="hero-subtitle animate-on-scroll">Instructors</p>
+        <h1 class="page-title animate-on-scroll delay-1">指導者</h1>
+        <p class="page-subtitle animate-on-scroll delay-2">佐野武道会の指導者一覧</p>
+    </header>
 
     <!-- メインコンテンツ -->
     <main class="main-content">
         <div class="container">
             
-            <!-- 居合道部 -->
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-subtitle">IAIDO</span>
-                    <h2 class="section-title">居合道部</h2>
-                </div>
-                
-                <div class="instructor-grid">
-                    <div class="glass-card instructor-card fade-in">
-                        <div class="instructor-card-content">
-                            <h3 class="instructor-name">河原 清</h3>
-                            <p class="instructor-rank">神心夢想流居合道 錬士 六段</p>
-                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
-                        </div>
-                    </div>
-                    
-                    <div class="glass-card instructor-card fade-in">
-                        <div class="instructor-card-content">
-                            <h3 class="instructor-name">デイビッド・ハランデル</h3>
-                            <p class="instructor-rank">神心夢想流居合道 二段</p>
-                            <span class="instructor-badge instructor-badge-overseas">海外指導員</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- 剣道部 -->
             <section class="section">
                 <div class="section-header">
                     <span class="section-subtitle">KENDO</span>
                     <h2 class="section-title">剣道部</h2>
                 </div>
-                
+
                 <div class="instructor-grid">
                     <div class="glass-card instructor-card fade-in">
                         <div class="instructor-card-content">
-                            <h3 class="instructor-name">久保 雄輝</h3>
-                            <p class="instructor-rank">剣道 三段</p>
-                            <span class="instructor-badge instructor-badge-kendo">指導員</span>
+                            <h3 class="instructor-name">新井 潤</h3>
+                            <p class="instructor-rank">剣道 五段</p>
+                            <span class="instructor-badge instructor-badge-chief">指導部長</span>
                         </div>
                     </div>
-                    
+
                     <div class="glass-card instructor-card fade-in">
                         <div class="instructor-card-content">
-                            <h3 class="instructor-name">横田 美南</h3>
-                            <p class="instructor-rank">剣道 三段</p>
-                            <span class="instructor-badge instructor-badge-kendo">指導員</span>
+                            <h3 class="instructor-name">江原 茂夫</h3>
+                            <p class="instructor-rank">剣道 五段</p>
+                            <span class="instructor-badge instructor-badge-vice-chief">指導副部長</span>
                         </div>
                     </div>
-                    
+
                     <div class="glass-card instructor-card fade-in">
                         <div class="instructor-card-content">
                             <h3 class="instructor-name">田村 瑞</h3>
-                            <p class="instructor-rank">剣道 三段</p>
+                            <p class="instructor-rank">剣道 四段</p>
                             <span class="instructor-badge instructor-badge-kendo">指導員</span>
                         </div>
                     </div>
-                    
+
                     <div class="glass-card instructor-card fade-in">
                         <div class="instructor-card-content">
-                            <h3 class="instructor-name">田中 公彦</h3>
-                            <p class="instructor-rank">剣道 二段</p>
+                            <h3 class="instructor-name">小倉 利幸</h3>
+                            <p class="instructor-rank">剣道 四段</p>
                             <span class="instructor-badge instructor-badge-kendo">指導員</span>
                         </div>
                     </div>
-                    
+
                     <div class="glass-card instructor-card fade-in">
                         <div class="instructor-card-content">
                             <h3 class="instructor-name">小倉 涼真</h3>
@@ -102,12 +74,110 @@ require_once __DIR__ . '/../../../config.php';
                             <span class="instructor-badge instructor-badge-kendo">指導員</span>
                         </div>
                     </div>
-                    
+
                     <div class="glass-card instructor-card fade-in">
                         <div class="instructor-card-content">
-                            <h3 class="instructor-name">豊島 翔生</h3>
+                            <h3 class="instructor-name">田中 公彦</h3>
                             <p class="instructor-rank">剣道 三段</p>
                             <span class="instructor-badge instructor-badge-kendo">指導員</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">古姓 佑美子</h3>
+                            <p class="instructor-rank">剣道 三段</p>
+                            <span class="instructor-badge instructor-badge-kendo">指導員</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 神心無想流居合道部 -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-subtitle">IAIDO</span>
+                    <h2 class="section-title">神心無想流居合道部</h2>
+                </div>
+
+                <div class="instructor-grid">
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">河原 清</h3>
+                            <p class="instructor-rank">神心無想流居合道 六段</p>
+                            <span class="instructor-badge instructor-badge-chief">指導部長</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">安藤 智吉</h3>
+                            <p class="instructor-rank">神心無想流居合道 五段</p>
+                            <span class="instructor-badge instructor-badge-vice-chief">指導副部長</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">浅野 恒雄</h3>
+                            <p class="instructor-rank">神心無想流居合道 五段</p>
+                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">大野 陽介</h3>
+                            <p class="instructor-rank">神心無想流居合道 四段</p>
+                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">小堀 淳一</h3>
+                            <p class="instructor-rank">神心無想流居合道 四段</p>
+                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">関谷 秀</h3>
+                            <p class="instructor-rank">神心無想流居合道 四段</p>
+                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">デイビッド・ハランデル</h3>
+                            <p class="instructor-rank">神心無想流居合道 五段</p>
+                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">ニコラス・パパニコラウ</h3>
+                            <p class="instructor-rank">神心無想流居合道 四段</p>
+                            <span class="instructor-badge instructor-badge-overseas">イギリス支部</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">ダニエル・イーストン</h3>
+                            <p class="instructor-rank">神心無想流居合道 三段</p>
+                            <span class="instructor-badge instructor-badge-overseas">イギリス支部</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card instructor-card fade-in">
+                        <div class="instructor-card-content">
+                            <h3 class="instructor-name">小川 有紀</h3>
+                            <p class="instructor-rank">神心無想流居合道 三段</p>
+                            <span class="instructor-badge instructor-badge-iaido">指導員</span>
                         </div>
                     </div>
                 </div>

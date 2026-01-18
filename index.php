@@ -72,6 +72,22 @@ require_once __DIR__ . '/config.php';
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
+
+            <!-- YouTube動画 -->
+            <div class="video-section" style="margin-top: var(--space-lg);">
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/WFWO-HVRyzI"
+                        title="佐野武道会 紹介動画"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p style="text-align: center; margin-top: var(--space-sm); color: var(--color-text-secondary);">
+                    佐野武道会のYouTubeチャンネルは<a href="https://www.youtube.com/@%E4%BD%90%E9%87%8E%E6%AD%A6%E9%81%93%E4%BC%9A" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent);">こちら</a>になります。
+                </p>
+            </div>
         </div>
     </section>
 
@@ -107,29 +123,14 @@ require_once __DIR__ . '/config.php';
             <div class="content-block reverse">
                 <div class="content-text animate-on-scroll">
                     <span class="label">Training</span>
-                    <h3>稽古案内</h3>
+                    <h3>道場案内</h3>
                     <p>
-                        稽古は栃木県佐野市内の道場にて定期的に開催しております。
+                        稽古は栃木県佐野市内の道場と小学校の体育館にて定期的に開催しております。
                         基礎から応用まで、個々のレベルに合わせた丁寧な指導を心がけています。
                     </p>
-                    
-                    <div style="margin-top: var(--space-md);">
-                        <div class="info-box">
-                            <div class="info-box-icon">📅</div>
-                            <div class="info-box-content">
-                                <h4>稽古日</h4>
-                                <p>詳細は道場案内ページをご確認ください</p>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <div class="info-box-icon">📍</div>
-                            <div class="info-box-content">
-                                <h4>場所</h4>
-                                <p>栃木県佐野市内</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <p>
+                        なお、稽古の時間・場所につきましては、道場案内ページをご覧ください。
+                    </p>
                     <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="btn btn-ghost" style="margin-top: var(--space-md);">
                         道場案内を見る →
                     </a>
@@ -147,7 +148,7 @@ require_once __DIR__ . '/config.php';
             <div class="animate-on-scroll">
                 <h2 class="heading-md" style="margin-bottom: var(--space-sm);">見学・体験のご案内</h2>
                 <p class="body-lg" style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-md);">
-                    武道に興味をお持ちの方、居合道を始めてみたい方、<br class="hide-mobile">
+                    武道に興味をお持ちの方、剣道・居合道を始めてみたい方、<br class="hide-mobile">
                     まずはお気軽にお問い合わせください。
                 </p>
                 <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-primary">

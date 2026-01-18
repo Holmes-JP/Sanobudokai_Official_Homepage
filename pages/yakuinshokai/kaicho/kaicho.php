@@ -16,14 +16,12 @@ require_once __DIR__ . '/../../../config.php';
 <body>
     <?php include __DIR__ . '/../../../partials/site-header.php'; ?>
 
-    <!-- ヒーローセクション -->
-    <section class="page-hero">
-        <div class="page-hero-overlay"></div>
-        <div class="page-hero-content">
-            <h1 class="page-hero-title" data-text="会長">会長</h1>
-            <p class="page-hero-subtitle">Chairman</p>
-        </div>
-    </section>
+    <!-- ページヘッダー -->
+    <header class="page-header">
+        <p class="hero-subtitle animate-on-scroll">Chairman</p>
+        <h1 class="page-title animate-on-scroll delay-1">会長</h1>
+        <p class="page-subtitle animate-on-scroll delay-2">神影流山本派初代宗家</p>
+    </header>
 
     <!-- メインコンテンツ -->
     <main class="main-content">
@@ -34,7 +32,7 @@ require_once __DIR__ . '/../../../config.php';
                 <div class="officer-profile glass-card fade-in">
                     <div class="officer-profile-image-wrapper">
                         <div class="officer-profile-image">
-                            <img src="<?= $basePath ?>/img/yakuinshokai/kaicho/kaicho.jpg" alt="会長 山本吉男">
+                            <img src="<?= $basePath ?>/img/yakuinshokai/kaicho.jpg" alt="会長 山本吉男">
                         </div>
                         <div class="officer-profile-badge">
                             <span class="officer-badge officer-badge-chairman">会長</span>
@@ -51,13 +49,22 @@ require_once __DIR__ . '/../../../config.php';
                         
                         <div class="officer-profile-bio">
                             <p>
-                                昭和19年栃木県佐野市に生まれる。昭和60年、神影流二十五世宗家・豊島一虎（号・勝峰）のもとに入門し剣道・居合道を修業。平成6年に神影流一門として佐野武道会を設立し、佐野市を拠点に指導を続けている。
+                                昭和19年栃木県佐野市に生まれる。
                             </p>
                             <p>
-                                師の教え「武道を通して地域社会に貢献しよう」をモットーに、高齢者施設や支援施設への演武会など社会貢献活動を継続。平成25年にはオーストラリア支部（ブリスベン）を設立し、イギリス・ケンブリッジにも支部を展開。国内外で日本武道の普及に努めている。
+                                昭和60年、神影流二十五世宗家-豊島一虎 号-勝峰の元に入門し剣道・居合道を修業。平成6年に神影流一門佐野武道会を栃木県佐野市に設立する。
                             </p>
                             <p>
-                                稽古は佐野武道館、佐野小学校体育館、福祉コミュニティセンターで週4日実施。
+                                現在は佐野武道館、佐野小学校体育館、福祉コミュニティセンターで週4日で稽古をしている。豊島一虎師匠の指導方針「武道を通して地域社会に貢献しよう」をモットーに佐野武道会は高齢者施設、デイサービスセンター、特別支援施設などへ武道の演武会の慰問活動を永年続けている。
+                            </p>
+                            <p>
+                                平成25年、オーストラリア支部をブリスベン市に設立し現在指導者3名、門下生13名が居合道の修業に励んでいます。近年ではイギリスのケンブリッジにも支部を設立。
+                            </p>
+                            <p>
+                                日本の伝統文化である「武道」の体験、見学はいつでも歓迎いたしております。ご興味のある方は是非一度お越しください。
+                            </p>
+                            <p>
+                                また、気になることがございましたら<a href="<?= $basePath ?>/pages/contact/contact.php">こちらのページ</a>からお気軽にお問い合わせください。
                             </p>
                         </div>
                     </div>

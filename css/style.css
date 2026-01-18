@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-logo {
-    height: 48px;
+    height: 60px;
     width: auto;
     border-radius: var(--radius-md);
     background: var(--color-bg-dark);
@@ -706,21 +706,35 @@ h1, h2, h3, h4, h5, h6 {
    コンテンツブロック
    =================================== */
 .content-block {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
     align-items: center;
+}
+
+/* モバイル: 画像サイズ調整 */
+.content-block .content-image {
+    max-width: 250px;
+    min-height: auto;
 }
 
 @media (min-width: 768px) {
     .content-block {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: var(--space-lg);
     }
-    
+
+    .content-block .content-image {
+        order: 0;
+        max-width: none;
+        min-height: 300px;
+    }
+
     .content-block.reverse {
         direction: rtl;
     }
-    
+
     .content-block.reverse > * {
         direction: ltr;
     }
@@ -812,6 +826,17 @@ h1, h2, h3, h4, h5, h6 {
 .form-textarea {
     min-height: 150px;
     resize: vertical;
+}
+
+/* セレクトボックスのオプション文字色修正 */
+select.form-input {
+    cursor: pointer;
+}
+
+select.form-input option {
+    background: #1a1a24;
+    color: #f0f0f0;
+    padding: 0.5rem;
 }
 
 /* ===================================
@@ -966,7 +991,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero {
         min-height: auto;
-        padding: calc(var(--space-xl) + 60px) var(--space-sm) var(--space-lg);
+        padding: calc(var(--space-xl) + 100px) var(--space-sm) var(--space-lg);
     }
     
     .hero-cta {
@@ -1123,7 +1148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* テーブル */
 .table-wrapper {
-    overflow-x: auto;
+    overflow: visible;
 }
 
 .info-table {
@@ -1422,6 +1447,101 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
+/* 役員リストレイアウト（横2列） */
+.officer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.officer-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(10px);
+}
+
+.officer-list-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.officer-list-name {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.officer-list-title {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.officer-list-desc {
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-top: 0.5rem;
+}
+
+.officer-list-info .btn {
+    margin-top: 0.8rem;
+}
+
+.officer-list-image {
+    width: 200px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.officer-list-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .officer-list {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+
+    .officer-list-image {
+        width: 180px;
+    }
+}
+
+/* 指導者CTAセクション */
+.instructor-cta {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(10px);
+}
+
+.instructor-cta-text {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
 /* タイムライン */
 .timeline {
     position: relative;
@@ -1531,6 +1651,17 @@ h1, h2, h3, h4, h5, h6 {
 .instructor-badge-overseas {
     background: linear-gradient(135deg, var(--color-gold), #b8860b);
     color: #1a1a24;
+}
+
+.instructor-badge-chief {
+    background: linear-gradient(135deg, #2d3436, #636e72);
+    color: white;
+    font-weight: 700;
+}
+
+.instructor-badge-vice-chief {
+    background: linear-gradient(135deg, #4a5568, #718096);
+    color: white;
 }
 
 /* レスポンシブ - 役員紹介 */

@@ -81,8 +81,8 @@ require_once __DIR__ . '/../../config.php';
                         <div class="glass-card" style="margin-bottom: var(--space-md);">
                             <h3 class="heading-sm" style="color: var(--color-accent); margin-bottom: var(--space-sm);">稽古場所</h3>
                             <div style="margin-bottom: var(--space-sm);">
-                                <p style="font-weight: 600;">佐野市隣保館</p>
-                                <p class="body-sm">〒327-0004 栃木県佐野市赤坂町958-18</p>
+                                <p style="font-weight: 600;">佐野小学校体育館</p>
+                                <p class="body-sm">〒327-0025 栃木県佐野市金屋下町10</p>
                             </div>
                             <div style="margin-bottom: var(--space-sm);">
                                 <p style="font-weight: 600;">佐野市武道館</p>
@@ -94,26 +94,15 @@ require_once __DIR__ . '/../../config.php';
                         </div>
                         
                         <div class="glass-card">
-                            <h3 class="heading-sm" style="color: var(--color-accent); margin-bottom: var(--space-sm);">稽古日</h3>
-                            <div class="info-table" style="border: none;">
-                                <table style="width: 100%;">
-                                    <tr>
-                                        <td style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);">
-                                            <strong>居合道</strong>
-                                        </td>
-                                        <td style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border); color: var(--color-text-secondary);">
-                                            水曜・土曜
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 0.5rem 0;">
-                                            <strong>剣道</strong>
-                                        </td>
-                                        <td style="padding: 0.5rem 0; color: var(--color-text-secondary);">
-                                            木曜・金曜・土曜
-                                        </td>
-                                    </tr>
-                                </table>
+                            <h3 class="heading-sm" style="color: var(--color-accent); margin-bottom: var(--space-sm);">稽古スケジュール</h3>
+                            <div style="margin-bottom: var(--space-sm);">
+                                <p style="font-weight: 600; margin-bottom: 0.3rem;">居合道</p>
+                                <p class="body-sm" style="color: var(--color-text-secondary);">土曜 16:00〜18:00（佐野市武道館）</p>
+                            </div>
+                            <div>
+                                <p style="font-weight: 600; margin-bottom: 0.3rem;">剣道</p>
+                                <p class="body-sm" style="color: var(--color-text-secondary);">木曜 19:00〜21:00（佐野市武道館）</p>
+                                <p class="body-sm" style="color: var(--color-text-secondary);">金曜 20:00〜21:30（佐野小学校体育館）</p>
                             </div>
                         </div>
                     </div>
