@@ -1,5 +1,5 @@
 ﻿<?php
-require_once __DIR__ . '/../../config.php';
+require_once __DIR__ . '/../config.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -38,7 +38,7 @@ require_once __DIR__ . '/../../config.php';
     </script>
 </head>
 <body class="bg-dark-bg text-white font-serif-jp">
-    <?php include __DIR__ . '/../../partials/site-header.php'; ?>
+    <?php include __DIR__ . '/../partials/site-header.php'; ?>
 
     <!-- タイトルバー -->
     <div class="relative h-64 flex items-center justify-center">
@@ -124,7 +124,7 @@ require_once __DIR__ . '/../../config.php';
 
     </main>
 
-    <?php include __DIR__ . '/../../partials/site-footer.php'; ?>
+    <?php include __DIR__ . '/../partials/site-footer.php'; ?>
 
     <script src="<?= $basePath ?>/js/main.js"></script>
 </body>

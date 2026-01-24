@@ -1,27 +1,27 @@
 <?php
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="佐野武道会 副会長の紹介">
-    <title>副会長 | 神影流山本派-佐野武道会</title>
+    <meta name="description" content="佐野武道会 相談役の紹介">
+    <title>相談役 | 神影流山本派-佐野武道会</title>
     <link rel="stylesheet" href="<?= $basePath ?>/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include __DIR__ . '/../../../partials/site-header.php'; ?>
+    <?php include __DIR__ . '/../../partials/site-header.php'; ?>
 
     <!-- ヒーローセクション -->
     <section class="page-hero">
         <div class="page-hero-overlay"></div>
         <div class="page-hero-content">
-            <h1 class="page-hero-title" data-text="副会長">副会長</h1>
-            <p class="page-hero-subtitle">Vice Chairman</p>
+            <h1 class="page-hero-title" data-text="相談役">相談役</h1>
+            <p class="page-hero-subtitle">Advisor</p>
         </div>
     </section>
 
@@ -31,52 +31,55 @@ require_once __DIR__ . '/../../../config.php';
             
             <section class="section">
                 <div class="section-header">
-                    <span class="section-subtitle">VICE CHAIRMAN</span>
-                    <h2 class="section-title">副会長のご紹介</h2>
+                    <span class="section-subtitle">ADVISOR</span>
+                    <h2 class="section-title">相談役のご紹介</h2>
                 </div>
                 
                 <div class="officer-duo-grid">
-                    <!-- 新井 潤 -->
+                    <!-- 豊島 一虎 -->
                     <div class="officer-profile glass-card fade-in">
                         <div class="officer-profile-image-wrapper">
                             <div class="officer-profile-image">
-                                <img src="<?= $basePath ?>/img/yakuinshokai/fukukaicho/fukukaicho1.jpg" alt="副会長 新井潤">
+                                <img src="<?= $basePath ?>/img/yakuinshokai/sodanyaku/sodanyaku1.jpg" alt="相談役 豊島一虎">
                             </div>
                             <div class="officer-profile-badge">
-                                <span class="officer-badge officer-badge-vice">副会長</span>
+                                <span class="officer-badge officer-badge-advisor">相談役</span>
                             </div>
                         </div>
                         <div class="officer-profile-content">
-                            <h2 class="officer-profile-name">新井 潤</h2>
-                            <p class="officer-profile-title">剣道 五段</p>
+                            <h2 class="officer-profile-name">
+                                豊島 一虎
+                                <span class="officer-profile-gou">（号・勝峰）</span>
+                            </h2>
+                            <p class="officer-profile-title">神影流二十五世宗家 / 神心無想流二世 / 柳心流体術四世</p>
                             <div class="officer-profile-divider"></div>
                             <div class="officer-profile-bio">
                                 <p>
-                                    佐野武道会の副会長として、会の運営と後進の指導に尽力。
-                                    剣道五段の腕前を持ち、剣道部門の指導を担当している。
+                                    佐野武道会の相談役として、会の運営に助言を行う。
+                                    埼玉県越谷市の本部道場で活動。詳細は本部道場サイトをご覧ください。
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 江原 茂夫 -->
+                    <!-- 小出 智男 -->
                     <div class="officer-profile glass-card fade-in">
                         <div class="officer-profile-image-wrapper">
                             <div class="officer-profile-image">
-                                <img src="<?= $basePath ?>/img/yakuinshokai/fukukaicho/fukukaicho2.jpg" alt="副会長 江原茂夫">
+                                <img src="<?= $basePath ?>/img/yakuinshokai/sodanyaku/sodanyaku2.jpg" alt="相談役 小出智男">
                             </div>
                             <div class="officer-profile-badge">
-                                <span class="officer-badge officer-badge-vice">副会長</span>
+                                <span class="officer-badge officer-badge-advisor">相談役</span>
                             </div>
                         </div>
                         <div class="officer-profile-content">
-                            <h2 class="officer-profile-name">江原 茂夫</h2>
-                            <p class="officer-profile-title">剣道 五段</p>
+                            <h2 class="officer-profile-name">小出 智男</h2>
+                            <p class="officer-profile-title">心身錬成道場 大義塾 理事長 / 神影流 範士 八段</p>
                             <div class="officer-profile-divider"></div>
                             <div class="officer-profile-bio">
                                 <p>
-                                    佐野武道会の副会長として、会の運営と後進の指導に尽力。
-                                    剣道五段の腕前を持ち、剣道部門の指導を担当している。
+                                    佐野武道会の相談役として、会の運営に助言を行う。
+                                    心身錬成道場「大義塾」の理事長を務め、武道の普及と指導に尽力している。
                                 </p>
                             </div>
                         </div>
@@ -97,7 +100,7 @@ require_once __DIR__ . '/../../../config.php';
         </div>
     </main>
 
-    <?php include __DIR__ . '/../../../partials/site-footer.php'; ?>
+    <?php include __DIR__ . '/../../partials/site-footer.php'; ?>
     <script src="<?= $basePath ?>/js/main.js"></script>
 </body>
 </html>

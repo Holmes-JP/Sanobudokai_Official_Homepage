@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(ssh:*)",
+      "Bash(composer --version:*)",
+      "Bash(php:*)",
+      "Bash(composer require:*)",
+      "Bash(vendor/bin/dep ssh:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Deployer configuration for deployment\n\n- Add deploy.php with shared server configuration\n- Add composer.json and composer.lock for Deployer dependency\n- Add .gitignore to exclude vendor and IDE files\n- Update css/style.css and index.php\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(vendor/bin/dep deploy:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

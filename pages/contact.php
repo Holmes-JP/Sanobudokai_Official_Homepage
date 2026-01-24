@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../config.php';
+require_once __DIR__ . '/../config.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -11,7 +11,7 @@ require_once __DIR__ . '/../../config.php';
     <link rel="stylesheet" href="<?= $basePath ?>/css/style.css">
 </head>
 <body>
-    <?php include __DIR__ . '/../../partials/site-header.php'; ?>
+    <?php include __DIR__ . '/../partials/site-header.php'; ?>
 
     <!-- ページヘッダー -->
     <header class="page-header">
@@ -150,7 +150,7 @@ require_once __DIR__ . '/../../config.php';
         </section>
     </main>
 
-    <?php include __DIR__ . '/../../partials/site-footer.php'; ?>
+    <?php include __DIR__ . '/../partials/site-footer.php'; ?>
 
     <button class="scroll-top" id="scroll-top" aria-label="ページトップへ戻る">↑</button>
 

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../../config.php';
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include __DIR__ . '/../../../partials/site-header.php'; ?>
+    <?php include __DIR__ . '/../../partials/site-header.php'; ?>
 
     <!-- ページヘッダー -->
     <header class="page-header">
@@ -119,7 +119,7 @@ require_once __DIR__ . '/../../../config.php';
         </div>
     </main>
 
-    <?php include __DIR__ . '/../../../partials/site-footer.php'; ?>
+    <?php include __DIR__ . '/../../partials/site-footer.php'; ?>
     <script src="<?= $basePath ?>/js/main.js"></script>
 </body>
 </html>
