@@ -1109,17 +1109,25 @@ select.form-input option {
     
     .hero {
         min-height: auto;
-        padding: calc(var(--space-xl) + 100px) var(--space-sm) var(--space-lg);
+        height: auto;
+        padding: 160px 20px 60px;
+        overflow: visible;
     }
-    
+
+    .hero-subtitle {
+        font-size: clamp(0.6rem, 3.5vw, 1rem);
+        letter-spacing: 0.15em;
+        white-space: nowrap;
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: center;
     }
-    
-    .btn {
-        width: 100%;
-        max-width: 300px;
+
+    .hero-cta .btn {
+        padding: 0.85rem 1.8rem;
+        font-size: 0.9rem;
     }
     
     .features {
