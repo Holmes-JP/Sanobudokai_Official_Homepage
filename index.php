@@ -22,10 +22,10 @@ require_once __DIR__ . '/config.php';
         <div class="hero-decoration right"></div>
         
         <div class="hero-content">
-            <p class="hero-subtitle animate-on-scroll">Sano Budokai</p>
+            <p class="hero-subtitle animate-on-scroll">Shinkage-ryu Yamamoto-ha</p>
             <h1 class="hero-title">
-                <span class="main-title animate-on-scroll delay-1">佐野武道会</span>
-                <span class="sub-title animate-on-scroll delay-2">神影流山本派</span>
+                <span class="main-title animate-on-scroll delay-1">神影流山本派</span>
+                <span class="sub-title animate-on-scroll delay-2">佐野武道会</span>
             </h1>
             <p class="hero-description animate-on-scroll delay-3">
                 心技一妙。一閃の刃に込められた精神。<br>
