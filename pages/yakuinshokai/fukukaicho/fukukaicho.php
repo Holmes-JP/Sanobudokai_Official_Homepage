@@ -86,7 +86,7 @@ require_once __DIR__ . '/../../../config.php';
 
             <!-- 戻るリンク -->
             <section class="section" style="text-align: center;">
-                <a href="<?= $basePath ?>/pages/yakuinshokai/yakuinshokai.php" class="btn btn-outline">
+                <a href="<?= $basePath ?>/yakuinshokai" class="btn btn-outline">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>

@@ -18,21 +18,21 @@ if (!isset($basePath)) {
             <div class="footer-section">
                 <h4>サイトマップ</h4>
                 <ul>
-                    <li><a href="<?= $basePath ?>/index.php">ホーム</a></li>
-                    <li><a href="<?= $basePath ?>/pages/setsumei/setsumei.php">佐野武道会の説明</a></li>
-                    <li><a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php">道場案内</a></li>
-                    <li><a href="<?= $basePath ?>/pages/katsudokiroku/katsudokiroku.php">活動記録</a></li>
-                    <li><a href="<?= $basePath ?>/pages/contact/contact.php">お問い合わせ</a></li>
+                    <li><a href="<?= $basePath ?>/">ホーム</a></li>
+                    <li><a href="<?= $basePath ?>/setsumei">佐野武道会の説明</a></li>
+                    <li><a href="<?= $basePath ?>/dojoannai">道場案内</a></li>
+                    <li><a href="<?= $basePath ?>/katsudokiroku">活動記録</a></li>
+                    <li><a href="<?= $basePath ?>/contact">お問い合わせ</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h4>お問い合わせ</h4>
                 <p>
                     見学・体験のお申し込みは<br>
                     お気軽にご連絡ください。
                 </p>
-                <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-ghost" style="margin-top: var(--space-sm); padding: 0.75rem 1.5rem; font-size: 0.875rem;">
+                <a href="<?= $basePath ?>/contact" class="btn btn-ghost" style="margin-top: var(--space-sm); padding: 0.75rem 1.5rem; font-size: 0.875rem;">
                     お問い合わせ →
                 </a>
             </div>

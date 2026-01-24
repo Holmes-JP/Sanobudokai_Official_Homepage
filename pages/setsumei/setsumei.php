@@ -156,7 +156,7 @@ require_once __DIR__ . '/../../config.php';
                     <p class="body-lg" style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-md);">
                         興味をお持ちの方はお気軽にお問い合わせください。
                     </p>
-                    <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-primary">
+                    <a href="<?= $basePath ?>/contact" class="btn btn-primary">
                         お問い合わせはこちら
                     </a>
                 </div>

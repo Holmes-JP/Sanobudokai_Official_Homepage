@@ -88,7 +88,7 @@ require_once __DIR__ . '/../../config.php';
                                 <p style="font-weight: 600;">佐野市武道館</p>
                                 <p class="body-sm">〒327-0843 栃木県佐野市堀米町167-1</p>
                             </div>
-                            <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="btn btn-ghost" style="margin-top: var(--space-sm);">
+                            <a href="<?= $basePath ?>/dojoannai" class="btn btn-ghost" style="margin-top: var(--space-sm);">
                                 道場案内を見る →
                             </a>
                         </div>

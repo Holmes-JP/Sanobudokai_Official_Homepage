@@ -47,7 +47,7 @@ require_once __DIR__ . '/../../config.php';
                             昭和19年栃木県佐野市に生まれる。昭和60年、神影流二十五世宗家・豊島一虎のもとに入門し剣道・居合道を修業。
                             平成6年に神影流一門として佐野武道会を設立し、佐野市を拠点に指導を続けている。
                         </p>
-                        <a href="<?= $basePath ?>/pages/yakuinshokai/kaicho/kaicho.php" class="btn btn-primary">
+                        <a href="<?= $basePath ?>/yakuinshokai/kaicho" class="btn btn-primary">
                             <span>詳しく見る</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -138,7 +138,7 @@ require_once __DIR__ . '/../../config.php';
 
                     <div class="instructor-cta fade-in">
                         <p class="instructor-cta-text">佐野武道会の指導者一覧はこちらからご覧いただけます。</p>
-                        <a href="<?= $basePath ?>/pages/yakuinshokai/shidosha/shidosha.php" class="btn btn-primary">
+                        <a href="<?= $basePath ?>/yakuinshokai/shidosha" class="btn btn-primary">
                             <span>指導者一覧を見る</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>

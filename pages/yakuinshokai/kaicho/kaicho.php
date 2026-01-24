@@ -64,7 +64,7 @@ require_once __DIR__ . '/../../../config.php';
                                 日本の伝統文化である「武道」の体験、見学はいつでも歓迎いたしております。ご興味のある方は是非一度お越しください。
                             </p>
                             <p>
-                                また、気になることがございましたら<a href="<?= $basePath ?>/pages/contact/contact.php">こちらのページ</a>からお気軽にお問い合わせください。
+                                また、気になることがございましたら<a href="<?= $basePath ?>/contact">こちらのページ</a>からお気軽にお問い合わせください。
                             </p>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ require_once __DIR__ . '/../../../config.php';
 
             <!-- 戻るリンク -->
             <section class="section" style="text-align: center;">
-                <a href="<?= $basePath ?>/pages/yakuinshokai/yakuinshokai.php" class="btn btn-outline">
+                <a href="<?= $basePath ?>/yakuinshokai" class="btn btn-outline">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>

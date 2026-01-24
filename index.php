@@ -32,10 +32,10 @@ require_once __DIR__ . '/config.php';
                 私たちは伝統の技と心を次世代へ繋ぎます。
             </p>
             <div class="hero-cta animate-on-scroll delay-4">
-                <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="btn btn-primary">
+                <a href="<?= $basePath ?>/setsumei" class="btn btn-primary">
                     佐野武道会を知る
                 </a>
-                <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-outline">
+                <a href="<?= $basePath ?>/contact" class="btn btn-outline">
                     お問い合わせ
                 </a>
             </div>
@@ -106,7 +106,7 @@ require_once __DIR__ . '/config.php';
                         初心者から経験者まで、武道に興味のある方はぜひお気軽にお問い合わせください。
                         見学・体験は随時歓迎しております。
                     </p>
-                    <a href="<?= $basePath ?>/pages/setsumei/setsumei.php" class="btn btn-ghost" style="margin-top: var(--space-md);">
+                    <a href="<?= $basePath ?>/setsumei" class="btn btn-ghost" style="margin-top: var(--space-md);">
                         詳しく見る →
                     </a>
                 </div>
@@ -131,7 +131,7 @@ require_once __DIR__ . '/config.php';
                     <p>
                         なお、稽古の時間・場所につきましては、道場案内ページをご覧ください。
                     </p>
-                    <a href="<?= $basePath ?>/pages/dojoannai/dojoannai.php" class="btn btn-ghost" style="margin-top: var(--space-md);">
+                    <a href="<?= $basePath ?>/dojoannai" class="btn btn-ghost" style="margin-top: var(--space-md);">
                         道場案内を見る →
                     </a>
                 </div>
@@ -151,7 +151,7 @@ require_once __DIR__ . '/config.php';
                     武道に興味をお持ちの方、剣道・居合道を始めてみたい方、<br class="hide-mobile">
                     まずはお気軽にお問い合わせください。
                 </p>
-                <a href="<?= $basePath ?>/pages/contact/contact.php" class="btn btn-primary">
+                <a href="<?= $basePath ?>/contact" class="btn btn-primary">
                     お問い合わせはこちら
                 </a>
             </div>
