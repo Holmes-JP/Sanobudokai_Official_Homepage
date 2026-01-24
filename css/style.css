@@ -838,6 +838,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--space-sm);
 }
 
+/* タイトル横ロゴ - デフォルト非表示（PC） */
+.title-with-logo {
+    display: block;
+}
+
+.title-logo {
+    display: none;
+}
+
 .content-text p {
     color: var(--color-text-secondary);
     line-height: 2;
@@ -1129,7 +1138,39 @@ select.form-input option {
         padding: 0.85rem 1.8rem;
         font-size: 0.9rem;
     }
-    
+
+    /* タイトル横のロゴ */
+    .title-with-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .title-with-logo h3 {
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+
+    .content-text .label {
+        margin-bottom: 0.5rem;
+    }
+
+    .title-logo {
+        display: block;
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+        border-radius: var(--radius-sm);
+        flex-shrink: 0;
+    }
+
+    /* 大きい画像を非表示 */
+    .content-block .content-image {
+        display: none;
+    }
+
     .features {
         grid-template-columns: 1fr;
     }

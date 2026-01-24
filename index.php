@@ -97,7 +97,10 @@ require_once __DIR__ . '/config.php';
             <div class="content-block">
                 <div class="content-text animate-on-scroll">
                     <span class="label">About Us</span>
-                    <h3>佐野武道会とは</h3>
+                    <div class="title-with-logo">
+                        <h3>佐野武道会とは</h3>
+                        <img src="<?= $basePath ?>/img/index/Logo.png" alt="佐野武道会ロゴ" class="title-logo">
+                    </div>
                     <p>
                         佐野武道会は平成6年（1994年）に設立された、栃木県佐野市を拠点とする居合道・剣道の道場です。
                         神心無想流居合道と剣道の稽古を通じて、技術向上だけでなく、礼節と精神を大切にした指導を行っています。
